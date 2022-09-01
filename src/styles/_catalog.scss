@@ -3,22 +3,16 @@
   justify-content: center;
   margin: 0 auto;
 
+  @media (min-width: 488px) {
+    grid-template-areas: "card card";
+  }
+
+  @media (min-width: 768px) {
+    grid-template-areas: "card card card";
+  }
+
   @media (min-width: 1024px) {
-    & {
-      grid-template-areas: "card card card card";
-    }
-  }
-
-  @media (min-width: 768px) and (max-width: 1023px) {
-    & {
-      grid-template-areas: "card card card";
-    }
-  }
-
-  @media (min-width: 488px) and (max-width: 767px) {
-    & {
-      grid-template-areas: "card card";
-    }
+    grid-template-areas: "card card card card";
   }
 
   &__card {
